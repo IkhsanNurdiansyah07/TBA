@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='fonts/icomoon/style.css')}}">
+
+
+    <!-- Bootstrap CSS -->
+   
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+    <title>Lexical Analyzer & Parse Table</title>
+  </head>
+  <body>
+  
+
+  <div class="content">
+    
+    <div class="container">
+      <div class="row align-items-stretch justify-content-center no-gutters">
+        <div class="col-md-12">
+          <div class="form h-100 contact-wrap p-5">
+            <h3 class="text-center">Lexical Analyzer & Parse Table</h3>
+            <form class="mb-5" method="post" action="./analyze" name="contactForm">
+              <center>Inputan : ana | abi | umi | daraaja | uwtubis | sayyarotun | yushtaraa | bae | tajir | ghasl</center>
+              <div class="row mb-5">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="message" class="col-form-label">Kalimat *</label>
+                  <textarea class="form-control" name="kalimat" id="Kalimat" cols="30" rows="4"  placeholder="Masukan inputan..."></textarea>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-5 form-group text-center">
+                  <input type="submit" value="Cek Kalimat!" class="btn btn-block btn-primary rounded-0 py-2 px-4">
+                  <span class="submitting"></span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    
+    
+  
+    <script src="{{url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery.validate.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+  </body>
+</html>
